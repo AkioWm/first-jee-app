@@ -1,5 +1,6 @@
 package servlets;
 
+import beans.Cars;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -20,6 +21,11 @@ public class Nissan extends HttpServlet {
         req.setAttribute("isSport",sport);
         String[] model = {"GT-R", "370z", "240z"};
         req.setAttribute("models", model);
+        Cars gtr = new Cars();
+        gtr.setMake("Nissan");
+        gtr.setModel("GT-R");
+        gtr.setSportCar(true);
+        req.setAttribute("gtr", gtr);
         this.getServletContext().getRequestDispatcher("/WEB-INF/nissan.jsp").forward(req,resp);
 
     }

@@ -5,9 +5,6 @@ public class Cars {
     private String model;
     private boolean sportCar;
 
-    public Cars(){
-
-    }
 
     public String getMake() {
         return make;
