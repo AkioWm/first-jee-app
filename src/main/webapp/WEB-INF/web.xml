@@ -5,12 +5,22 @@
          version="5.0">
 
     <servlet>
-        <servlet-name>Test</servlet-name>
-        <servlet-class>servlets.Test</servlet-class>
+        <servlet-name>Home</servlet-name>
+        <servlet-class>servlets.Home</servlet-class>
     </servlet>
-
     <servlet-mapping>
-        <servlet-name>Test</servlet-name>
+        <servlet-name>Home</servlet-name>
         <url-pattern>/home</url-pattern>
     </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>Nissan</servlet-name>
+        <servlet-class>servlets.Nissan</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Nissan</servlet-name>
+        <url-pattern>/nissan</url-pattern>
+    </servlet-mapping>
+
 </web-app>
