@@ -5,18 +5,13 @@
 </head>
 
 <body>
-<h1>Welcome home buddy </h1>
-
-<p>
+<h1>Welcome Home Lonely Driver
     <%
-        String city = (String) request.getAttribute("City");
-
-        if(city.equals("Hiroshima")){
-            out.println("Welcome to Mazda");
-        }else{
-            out.println("Welcome to Nissan");
-        }
+        String name = (String) request.getAttribute("name");
+        out.println(name);
     %>
-</p>
+
+</h1>
+<%@ include file="menu.jsp"%>
 </body>
 </html>
