@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,8 +8,7 @@
 <body>
 
 <h1>
-<%--    Welcome to ${empty isSport ? "Nissan" : "Nismo Department"}--%>
-    Welcome to ${ gtr.sportCar ? "Nismo Department" : "Nissan"}
+    Welcome to <c:if test="${gtr.sportCar == true }"> Nismo Department</c:if>
 </h1>
 
 <%@ include file="menu.jsp"%>

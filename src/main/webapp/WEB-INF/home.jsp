@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
 <html lang="en">
 <head>
     <title> Home </title>
@@ -6,12 +7,10 @@
 
 <body>
 <h1>Welcome Home Lonely Driver
-    <%
-        String name = (String) request.getAttribute("name");
-        out.println(name);
-    %>
-
+    <p><c:out value="${City}"/></p>
 </h1>
 <%@ include file="menu.jsp"%>
+
+
 </body>
 </html>
