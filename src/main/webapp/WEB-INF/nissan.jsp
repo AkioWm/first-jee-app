@@ -13,13 +13,15 @@
 
 <%@ include file="menu.jsp"%>
 
-<%--<ul>--%>
-<%--    <li>${models[0]}</li>--%>
-<%--    <li>${models[1]}</li>--%>
-<%--    <li>${models[2]}</li>--%>
-<%--</ul>--%>
-<h2></h2>
+
+
 <h2>${gtr.make} ${gtr.model}</h2>
+
+
+    <c:forEach items="${models}" var="model">
+       <p><c:out value="${model}"></c:out></p>
+    </c:forEach>
+
 
 
 </body>
